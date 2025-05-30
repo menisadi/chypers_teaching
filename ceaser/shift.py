@@ -2,7 +2,7 @@ import sys
 import os
 
 
-def caesar_cipher_hebrew(text, shift):
+def caesar_cipher_hebrew(text: str, shift: int) -> str:
     """
     Encrypts the given Hebrew text by shifting each letter by the specified number.
 
@@ -13,7 +13,7 @@ def caesar_cipher_hebrew(text, shift):
     hebrew_start = ord("א")
     hebrew_end = ord("ת")
 
-    def shift_letter(letter, shift):
+    def shift_letter(letter: str, shift: int) -> str:
         if hebrew_start <= ord(letter) <= hebrew_end:
             new_pos = (ord(letter) - hebrew_start + shift) % (
                 hebrew_end - hebrew_start + 1
