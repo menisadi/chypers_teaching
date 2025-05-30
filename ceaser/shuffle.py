@@ -7,8 +7,6 @@ Usage
 python encrypt_hebrew.py input.txt output.txt           # encrypted text only
 python encrypt_hebrew.py input.txt output.txt -s        # also save mapping
 """
-from __future__ import annotations
-
 import argparse
 import random
 import sys
